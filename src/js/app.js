@@ -5,7 +5,7 @@ const app = express();
 let name = 'Paul';
 
 app.get('/', (req, res)=>{
-    res.send('<h1>This is the root route111222</h1>');
+    res.send('<h1>This is the root route!</h1>');
 });
 
 app.get('/hello', (req, res)=>{
@@ -13,7 +13,7 @@ app.get('/hello', (req, res)=>{
 });
 
 let dt = Date();
-console.log('   ' + dt.getHours());
+console.log('   ' + dt);
 
 app.listen(3000, ()=>{
     console.log('Changes have been reloaded - '+dt );

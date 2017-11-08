@@ -5,11 +5,11 @@ const app = express();
 let name = 'Paul';
 
 app.get('/', (req, res)=>{
-    res.send('<h1>This is the root route!</h1>');
+    res.send('<h1>This is the root route!!!!'+name+'</h1>');
 });
 
 app.get('/hello', (req, res)=>{
-    res.send(`<p>Hello ${name}. You are an awesome developer!!!</p>`);
+    res.send(`<p>Hello ${name}. You are an awesome developer ${name}!!!</p>`);
 });
 
 let dt = Date();

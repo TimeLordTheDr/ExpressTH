@@ -7,11 +7,11 @@ var app = express();
 var name = "Paul";
 
 app.get("/", function (req, res) {
-    res.send("<h1>This is the root route!</h1>");
+    res.send("<h1>This is the root route!!!!" + name + "</h1>");
 });
 
 app.get("/hello", function (req, res) {
-    res.send("<p>Hello " + name + ". You are an awesome developer!!!</p>");
+    res.send("<p>Hello " + name + ". You are an awesome developer " + name + "!!!</p>");
 });
 
 var dt = Date();

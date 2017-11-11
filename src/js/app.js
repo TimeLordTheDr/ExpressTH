@@ -10,6 +10,11 @@ app.set('views', 'src/views');
 
 
 app.get('/', (req, res)=>{
+    res.render('index', { title: 'Altered title', message: 'Altered message' });//Somehow this obj params has no effect
+});
+
+
+app.get('/root', (req, res)=>{
     res.send("<h1>This is the root route!!!!! It appears we don't need the dist folder yet to reload the page. Which task runs first?</h1>");
 });
 

@@ -4,7 +4,7 @@ var gulp = require('gulp'),
     reload = require('gulp-livereload');
 
 gulp.task('reload', function () {
-    return gulp.src('src/js/*.js')
+    return gulp.src(['src/js/*.js', 'src/views/*.pug'])
         //.pipe(to5())
         //.pipe(gulp.dest('dist/js'))
         .pipe(reload());
@@ -12,5 +12,5 @@ gulp.task('reload', function () {
 
 gulp.task('watch', function () {
     reload.listen();
-    gulp.watch(['src/js/*.js'], ['reload']);
+    gulp.watch(['src/js/*.js', 'src/views/*.pug'], ['reload']);
 });

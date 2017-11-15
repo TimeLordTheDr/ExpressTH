@@ -27,8 +27,8 @@ app.get('/root', (req, res)=>{
     res.send("<h1>This is the root route! It appears we don't need the dist folder yet to reload the page. Which task runs first?</h1>");
 });
 
-app.get('/root', (req, res)=>{
-    res.send("<h1>This is the root route! It appears we don't need the dist folder yet to reload the page. Which task runs first?</h1>");
+app.get('/hello', (req, res)=>{
+    res.render('hello', {name});
 });
 
 let dt = Date();

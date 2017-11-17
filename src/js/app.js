@@ -31,6 +31,10 @@ app.get('/hello', (req, res)=>{
     res.render('hello', {name});
 });
 
+app.post('/hello', (req, res)=>{
+    res.render('hello');
+});
+
 let dt = Date();
 console.log('   ' + dt);
 
